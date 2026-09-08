@@ -1,0 +1,96 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: saturate(180%) blur(16px);
+  -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid var(--border);
+  color: var(--heading);
+}
+header * {
+  font-family: var(--body);
+}
+header .logo_row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  background-image: none;
+  color: var(--heading);
+}
+header .logo_row .logo {
+  height: 38px;
+  width: auto;
+  flex: none;
+}
+header .logo_row .logo_text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.1;
+}
+header .logo_row .logo_text .logo_title {
+  font-family: var(--display);
+  font-size: clamp(1.2rem, 1.12rem + 0.36vw, 1.42rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--heading);
+}
+header .logo_row .logo_text .logo_subtitle {
+  font-size: clamp(0.83rem, 0.8rem + 0.13vw, 0.89rem);
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+}
+header .nav_row {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+header .nav_row .link {
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: clamp(1rem, 0.95rem + 0.22vw, 1.13rem);
+  font-weight: 500;
+  color: var(--text);
+  background-image: none;
+  transition: color 180ms cubic-bezier(0.4, 0, 0.2, 1), background 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .nav_row .link:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+header a {
+  color: currentColor;
+  text-decoration: none;
+  background-image: none;
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 12px 24px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  header .logo_row {
+    justify-content: center;
+  }
+  header .nav_row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

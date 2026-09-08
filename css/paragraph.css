@@ -1,0 +1,42 @@
+p {
+  margin: 24px 0;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+p {
+  text-align: left;
+  line-height: var(--line);
+  text-wrap: pretty;
+}
+
+.lead {
+  font-size: clamp(1.2rem, 1.12rem + 0.36vw, 1.42rem);
+  line-height: 1.5;
+  color: var(--heading);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+strong,
+b {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--surface-2);
+  padding: 0.15em 0.4em;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=paragraph.css.map */

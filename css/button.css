@@ -1,0 +1,79 @@
+.button-wrapper {
+  display: inline-flex;
+  margin: 8px 8px 8px 0;
+}
+
+.button,
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  min-height: 46px;
+  margin: 0;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--body);
+  font-size: clamp(1rem, 0.95rem + 0.22vw, 1.13rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms cubic-bezier(0.4, 0, 0.2, 1), background 180ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 180ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button i,
+.button svg,
+button i,
+button svg {
+  transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+button:hover {
+  background: var(--accent-hover);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.28);
+}
+.button:active,
+button:active {
+  transform: translateY(0);
+}
+.button[data-flip],
+button[data-flip] {
+  flex-direction: row-reverse;
+}
+.button[data-flip]:hover i, .button[data-flip]:hover svg,
+button[data-flip]:hover i,
+button[data-flip]:hover svg {
+  transform: translateX(3px);
+}
+.button[data-style=ghost],
+button[data-style=ghost] {
+  background: transparent;
+  color: var(--heading);
+  border-color: var(--border-strong);
+}
+.button[data-style=ghost]:hover,
+button[data-style=ghost]:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: none;
+}
+
+[data-dark=true] .button[data-style=ghost] {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+[data-dark=true] .button[data-style=ghost]:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*# sourceMappingURL=button.css.map */

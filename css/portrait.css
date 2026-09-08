@@ -1,0 +1,72 @@
+.portrait {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  width: var(--width);
+  margin: calc(24 * var(--width) / 150);
+  text-align: center;
+  line-height: var(--line);
+  text-decoration: none;
+  background-image: none;
+  vertical-align: top;
+}
+.portrait .portrait_image {
+  position: relative;
+  display: inline-block;
+  width: var(--width);
+  height: var(--width);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
+  transition: transform 280ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portrait .portrait_image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 480ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portrait:hover .portrait_image {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 4px var(--accent-soft), 0 12px 28px rgba(15, 23, 42, 0.1), 0 6px 12px rgba(15, 23, 42, 0.05);
+}
+.portrait:hover .portrait_image img {
+  transform: scale(1.05);
+}
+.portrait .portrait_name {
+  font-family: var(--display);
+  font-size: clamp(1rem, 0.95rem + 0.22vw, 1.13rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--heading);
+}
+.portrait .portrait_description {
+  margin-top: -8px;
+  font-family: var(--body);
+  font-size: clamp(0.83rem, 0.8rem + 0.13vw, 0.89rem);
+  color: var(--muted);
+}
+.portrait .role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(0.15 * var(--width));
+  top: calc(0.15 * var(--width));
+  margin: 0;
+  width: calc(0.28 * var(--width));
+  height: calc(0.28 * var(--width));
+  font-size: calc(15 * var(--width) / 150);
+  background: var(--accent);
+  color: #fff;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08), 0 2px 4px rgba(15, 23, 42, 0.04);
+  border: 2px solid var(--paper);
+}
+
+/*# sourceMappingURL=portrait.css.map */
