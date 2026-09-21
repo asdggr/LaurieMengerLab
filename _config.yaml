@@ -12,6 +12,7 @@ header: ""
 header-dark: false
 footer: "images/banner.jpg"
 baseurl: /
+url: https://mengerlab.org
 
 # site social media and other links
 links:
