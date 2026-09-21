@@ -1,4 +1,5 @@
 ---
+description: "Publications of the Menger Lab and Laurie Menger on CRISPR screening, CAR-T cells, T-cell biology and immunogenic cell death."
 title: Publications
 nav:
   order: 2

@@ -1,6 +1,6 @@
 ---
 title: Research
-description: Discover how the Menger Lab uses in vivo CRISPR screening to study immune regulation and engineer T-cell therapies against cancer.
+description: "Current research of the Menger Lab at Gustave Roussy: engineered CAR-T cells for pediatric cancers, mIDH tumors, epigenetic reprogramming, academic CAR-T production and in vivo CAR-T for fibrosis."
 nav:
   order: 1
   tooltip: What we study
