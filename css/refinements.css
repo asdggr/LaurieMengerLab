@@ -50,43 +50,9 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
   pointer-events: none;
 }
 
-.paper_highlights {
-  display: grid;
-  gap: 32px;
-}
-
-.paper_story {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  overflow: hidden;
-  border: 1px solid #e1d9eb;
-  border-radius: 20px;
-  background: #fff;
-}
-
-.paper_story_heading {
-  padding: clamp(24px, 4vw, 44px);
-  background: #eee8f6;
-}
-
-.paper_story_heading h3 {
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
-  color: #302145;
-  margin: 16px 0 28px;
-}
-
-.paper_story_heading .eyebrow {
-  color: #705193;
-  font-size: 12px;
-}
-
 .paper_meta {
   font-size: 13px;
   color: #635b6e;
-}
-
-.paper_story_body {
-  padding: clamp(24px, 4vw, 44px);
 }
 
 .evidence_label {
@@ -94,35 +60,6 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
   font-size: 11px;
   color: #635b6e;
   margin: 0 0 24px;
-}
-
-.paper_story dl {
-  margin: 0;
-}
-
-.paper_story dt {
-  font-size: 12px;
-  font-weight: 700;
-  color: #705193;
-  margin-top: 24px;
-}
-
-.paper_story dd {
-  margin: 8px 0 0;
-  font-size: 15px;
-  line-height: 1.75;
-}
-
-.paper_story details {
-  margin: 24px 0;
-  border-top: 1px solid #e1d9eb;
-  padding-top: 18px;
-  font-size: 14px;
-}
-
-.paper_story summary {
-  cursor: pointer;
-  color: #302145;
 }
 
 .paper_source {
@@ -226,11 +163,6 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
   color: #635b6e;
 }
 
-.team_alumni {
-  max-width: 355px;
-  grid-template-columns: 1fr;
-}
-
 .team_life {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -255,7 +187,7 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
 
 .team_memories {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   margin-top: 32px;
 }
@@ -363,7 +295,7 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
   text-underline-offset: 4px;
 }
 
-.member_card:focus-visible, .paper_story a:focus-visible, .paper_story summary:focus-visible, .member_profile a:focus-visible {
+.member_card:focus-visible, .member_profile a:focus-visible {
   outline: 3px solid #8562b4;
   outline-offset: 5px;
 }
@@ -372,15 +304,9 @@ main > section.background:not([data-dark=true]):nth-of-type(even) {
   .team_directory {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .team_alumni {
-    grid-template-columns: 1fr;
-  }
   .member_profile {
     grid-template-columns: 240px minmax(0, 1fr);
     gap: 32px;
-  }
-  .paper_story, .team_life {
-    grid-template-columns: 1fr;
   }
   .page_intro:after {
     right: 0;

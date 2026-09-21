@@ -35,7 +35,7 @@
 <link
   rel="alternate"
   type="application/rss+xml"
-  href="https://asdggr.github.io/LaurieMengerLab/feed.xml"
+  href="/LaurieMengerLab/feed.xml"
 />
 
 <!-- https://developers.google.com/web/fundamentals/native-hardware/click-to-call#disable_auto-detection_when_necessary -->
@@ -47,6 +47,7 @@
   sizes="180x180"
   href="/LaurieMengerLab/favicons/ios.png"
 />
+<link rel="icon" type="image/svg+xml" href="/LaurieMengerLab/images/logo_lm_mark.svg" />
 <link
   rel="icon"
   type="image/png"
@@ -159,14 +160,7 @@
     class="logo_row"
     data-tooltip="Home"
   >
-    <img src="/LaurieMengerLab/images/logo_team.png" class="logo" alt="Logo image" />
-    
-      <span class="logo_text">
-        <span class="logo_title">Menger Lab</span>
-        
-          <span class="logo_subtitle">at Gustave Roussy Institute</span>
-        
-      </span>
+    <img src="/LaurieMengerLab/images/logo_lm_lab.svg" class="logo" alt="LM Lab · T cell biology, home" />
     
   </a>
   <nav class="nav_row"><a class="link" href="/LaurieMengerLab/research/" data-tooltip="What we study"  data-text="true"  data-style=""><span>Research</span></a><a class="link" href="/LaurieMengerLab/publications/" data-tooltip="Our publications"  data-text="true"  data-style=""><span>Publications</span></a><a class="link" href="/LaurieMengerLab/news/" data-tooltip="News"  data-text="true"  data-style=""><span>News</span></a><a class="link" href="/LaurieMengerLab/team/" data-tooltip="About our team"  data-text="true"  data-style=""><span>Team</span></a><a class="link" href="/LaurieMengerLab/contact/" data-tooltip="Email, address, and location"  data-text="true"  data-style=""><span>Contact</span></a><a class="link" href="/LaurieMengerLab/opportunities/" data-tooltip="Join us!"  data-text="true"  data-style=""><span>Opportunities</span></a></nav>
@@ -180,7 +174,16 @@
       
     ><div class="page_intro research_intro_header"><span class="eyebrow">Our research · Advanced T-cell Therapy</span><h1>Understand T cells.<br />Rethink their possibilities.</h1><p class="lead">We investigate what limits T-cell responses and how to overcome those barriers. Our work connects functional genomics, immune regulation and the engineering of cell therapies against cancer.</p></div>
 
-<nav class="research_navigation" aria-label="Research areas"><a href="#crispr-screening"><span>Discovery platform</span>In vivo CRISPR screening ↗</a><a href="#allogeneic-therapy"><span>Cell engineering</span>Resistance to immune rejection ↗</a><a href="#immune-regulation"><span>T-cell biology</span>Regulating CD4+ responses ↗</a></nav>
+<div class="theme_grid" aria-label="Research themes">
+<a class="theme_card" href="#crispr-screening"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">01</span><h3>In vivo genome-wide CRISPR screening in T cells</h3><p>Which genes shape the response of a T cell in a living system?</p></a>
+<a class="theme_card" href="#allogeneic-therapy"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">02</span><h3>Helping donor CAR T cells withstand immune rejection</h3><p>How can allogeneic CAR T cells persist in the face of immune rejection?</p></a>
+<a class="theme_card" href="#immune-regulation"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">03</span><h3>Understanding the brakes on CD4+ T cells</h3><p>What controls the expansion of antigen-experienced CD4+ T cells?</p></a>
+<a class="theme_card" href="#pediatric-car-t"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">04</span><h3>Locus-specific engineering of sensing-adapting CAR-T cells for pediatric cancers</h3><p>Off-the-shelf allogeneic CAR-T cells for neuroblastoma and DIPG.</p><span class="theme_members">Saul Dubois, Chan Jian Cheng, Louis Piqc</span></a>
+<a class="theme_card" href="#mutant-idh"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">05</span><h3>Dissecting T cell functional barriers in the mIDH tumor microenvironment</h3><p>Overcoming D-2HG-mediated immunosuppression of CD8+ T cells.</p><span class="theme_members">Chloe Slater (lead), Jinhong Kang, Laetitia Perrin</span></a>
+<a class="theme_card" href="#epigenetic-reprogramming"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">06</span><h3>Safe and transient epigenetic reprogramming of T cell therapies</h3><p>Durable stem-like imprinting without permanent genome editing.</p><span class="theme_members">Albane Simon (lead), Marguerite Laprie-Sentenac, Romane Caudron, Chuang Dong, Aurelien Sutra Del Galy</span></a>
+<a class="theme_card" href="#cell-attack"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">07</span><h3>Cell ATTACK — academic CAR-T production</h3><p>Academic manufacturing of CAR-T cells at Gustave Roussy.</p><span class="theme_members">Aurelien Sutra Del Galy</span></a>
+<a class="theme_card" href="#in-vivo-car-t"><span class="theme_badge" aria-hidden="true">↗</span><span class="theme_number">08</span><h3>In vivo CAR-T for autoimmune diseases</h3><p>Anti-fibrotic CAR-T cells generated directly in the patient with LNP-delivered mRNA.</p></a>
+</div>
 
 </section><section
       class="background"
@@ -201,11 +204,6 @@
 <div class="research_axis" id="crispr-screening">
 <div class="research_axis_header"><div><span class="eyebrow">Discovery platform</span><h2>Screen broadly.<br />Find the critical regulators.</h2></div><p class="research_question">Which genes shape the response of a T cell in a living system?</p></div>
 <div class="research_axis_copy"><p>Our in vivo genome-wide CRISPR approach enables systematic investigation of the mechanisms that regulate primary T cells. It provides a foundation for finding targets that may be missed by candidate-led approaches.</p><p>We developed an optimized protocol to generate pools of Cas9-expressing murine T cells with genome-wide gene inactivation, using a retroviral guide-RNA library.</p></div>
-<figure class="research_figure">
-  <a href="/LaurieMengerLab/images/research/thematic_2.jpg" target="_blank" rel="noopener" aria-label="Enlarge figure: CRISPR screening workflow from a guide-RNA library to edited T cells and in vivo selection (new tab)"><img src="/LaurieMengerLab/images/research/thematic_2.jpg" alt="CRISPR screening workflow from a guide-RNA library to edited T cells and in vivo selection" width="1058" height="595" loading="lazy" /></a>
-  <figcaption><span>Platform overview · Laprie-Sentenac et al., STAR Protocols, 2023</span><a href="/LaurieMengerLab/images/research/thematic_2.jpg" target="_blank" rel="noopener">Enlarge figure ↗ <span class="figure_tab_note">(new tab)</span></a></figcaption>
-</figure>
-
 <a class="research_paper_link" href="https://doi.org/10.1016/j.xpro.2022.101922"><span>Explore the method</span>Read the CRISPR screening protocol ↗</a>
 </div>
 
@@ -219,11 +217,6 @@
 <div class="research_axis" id="allogeneic-therapy">
 <div class="research_axis_header"><div><span class="eyebrow">Cell engineering</span><h2>Help donor T cells<br />withstand rejection.</h2></div><p class="research_question">How can allogeneic CAR T cells persist in the face of immune rejection?</p></div>
 <div class="research_axis_copy"><p>Donor-derived CAR T cells could enable standardized batches of therapeutic cells. A key obstacle is their rejection by the recipient's immune system.</p><p>In preclinical work, genome-wide screening identified Fas and B2m as regulators of allogeneic T-cell survival. Further experiments investigated FAS editing as a way to protect CAR T cells from rejection without increasing susceptibility to natural killer cells.</p></div>
-<figure class="research_figure">
-  <a href="/LaurieMengerLab/images/research/thematic_1_update.jpg" target="_blank" rel="noopener" aria-label="Enlarge figure: Overview of allogeneic T-cell engineering, CRISPR screening hits and survival results in a mouse model (new tab)"><img src="/LaurieMengerLab/images/research/thematic_1_update.jpg" alt="Overview of allogeneic T-cell engineering, CRISPR screening hits and survival results in a mouse model" width="1058" height="595" loading="lazy" /></a>
-  <figcaption><span>Research overview · Menegatti et al., Nature Biomedical Engineering, 2024 · Preclinical study</span><a href="/LaurieMengerLab/images/research/thematic_1_update.jpg" target="_blank" rel="noopener">Enlarge figure ↗ <span class="figure_tab_note">(new tab)</span></a></figcaption>
-</figure>
-
 <a class="research_paper_link" href="https://www.nature.com/articles/s41551-024-01282-8"><span>Explore the evidence</span>Read the study on FAS and allogeneic CAR T cells ↗</a>
 </div>
 
@@ -237,12 +230,72 @@
 <div class="research_axis" id="immune-regulation">
 <div class="research_axis_header"><div><span class="eyebrow">T-cell biology</span><h2>Understand the brakes<br />on CD4+ T cells.</h2></div><p class="research_question">What controls the expansion of antigen-experienced CD4+ T cells?</p></div>
 <div class="research_axis_copy"><p>We use genome-wide CRISPR screens to investigate the regulatory mechanisms that shape CD4+ T-cell responses during localized immune responses.</p><p>This approach identified SOCS1 as an intrinsic checkpoint limiting CD4+ T-cell proliferation, providing a route to explore how immune regulation can inform cell-therapy engineering.</p></div>
-<figure class="research_figure">
-  <a href="/LaurieMengerLab/images/research/thematic_3.jpg" target="_blank" rel="noopener" aria-label="Enlarge figure: Experimental overview showing SOCS1 screening results and flow-cytometry measurements of CD4 T-cell responses (new tab)"><img src="/LaurieMengerLab/images/research/thematic_3.jpg" alt="Experimental overview showing SOCS1 screening results and flow-cytometry measurements of CD4 T-cell responses" width="1058" height="595" loading="lazy" /></a>
-  <figcaption><span>Research overview · Sutra Del Galy et al., Science Immunology, 2021</span><a href="/LaurieMengerLab/images/research/thematic_3.jpg" target="_blank" rel="noopener">Enlarge figure ↗ <span class="figure_tab_note">(new tab)</span></a></figcaption>
-</figure>
-
 <a class="research_paper_link" href="https://doi.org/10.1126/sciimmunol.abe8219"><span>Explore the mechanism</span>Read the study on SOCS1 and CD4+ T cells ↗</a>
+</div>
+
+</section><section
+      class="background"
+      
+      
+      
+    >
+
+<div class="research_axis" id="pediatric-car-t">
+<div class="research_axis_header"><div><span class="eyebrow">Theme 04</span><h2>Locus-specific engineering of sensing-adapting CAR-T cells for pediatric cancers</h2></div><p class="research_question">Off-the-shelf allogeneic CAR-T cells for neuroblastoma and DIPG.</p></div>
+<div class="research_axis_copy"><p>Designing off-the-shelf allogeneic CAR-T therapies is critically important for pediatric cancers such as neuroblastoma and DIPG. While patients with low tumor burden receiving GD2-directed CAR-T cells have demonstrated impressive 3-year event-free survival rates approaching 60%, achieving this low burden typically requires intensive induction treatments, including high-dose chemotherapy or meta-iodobenzylguanidine (MIBG). These harsh regimens often induce severe lymphopenia, making autologous T cell collection for CAR-T manufacturing challenging or unfeasible.</p><p>To overcome this barrier, we propose locus-specific engineering of targets identified from our CRISPR knockout screen. This precision engineering strategy integrates synthetic rheostatic circuits that provide environmental sensing, converting negative immunosuppressive signals from the tumor microenvironment into positive outputs to enhance T cell fitness, while simultaneously providing crucial safety mechanisms for next-generation, off-the-shelf cell therapies.</p></div>
+<dl class="theme_facts"><div><dt>Team</dt><dd>Saul Dubois, Chan Jian Cheng, Louis Piqc</dd></div><div><dt>Funding</dt><dd>FLGE Oncoped, Ligue Nationale contre le Cancer (Thérapies innovantes)</dd></div><div><dt>Collaborations</dt><dd>Florent Ginhoux (Gustave Roussy), Claudia Pasqualini (Gustave Roussy), Suman Mitra (Lille)</dd></div></dl>
+</div>
+
+</section><section
+      class="background"
+      
+      
+      
+    >
+
+<div class="research_axis" id="mutant-idh">
+<div class="research_axis_header"><div><span class="eyebrow">Theme 05</span><h2>Dissecting T cell functional barriers in the mIDH tumor microenvironment</h2></div><p class="research_question">Overcoming D-2HG-mediated immunosuppression of CD8+ T cells.</p></div>
+<div class="research_axis_copy"><p>Gain-of-function mutations in IDH1/2 generate the oncometabolite D-2-hydroxyglutarate (D-2HG), which drives immune evasion by suppressing CD8+ T cell function within the tumor microenvironment (TME). While pharmacological inhibition of IDH1 (e.g., AG120) provides initial metabolic rescue and promotes antitumor immunity, this approach is insufficient to sustain long-term T cell efficacy.</p><p>To identify genetic targets capable of overcoming D-2HG-mediated immunosuppression, we conducted a genome-wide CRISPR knockout screen in CD8+ T cells. This screen identified several D-2HG-specific negative regulators of T cell effector function, whose activity is being translated into human CAR-T cell models.</p></div>
+<dl class="theme_facts"><div><dt>Team</dt><dd>Chloe Slater (lead), Jinhong Kang, Laetitia Perrin</dd></div><div><dt>Funding</dt><dd>Servier, Ligue Nationale contre le Cancer</dd></div><div><dt>Collaborations</dt><dd>Nabeel Bardeesy (Massachusetts General Hospital)</dd></div></dl>
+</div>
+
+</section><section
+      class="background"
+      
+      
+      
+    >
+
+<div class="research_axis" id="epigenetic-reprogramming">
+<div class="research_axis_header"><div><span class="eyebrow">Theme 06</span><h2>Safe and transient epigenetic reprogramming of T cell therapies</h2></div><p class="research_question">Durable stem-like imprinting without permanent genome editing.</p></div>
+<div class="research_axis_copy"><p>A major limitation of current adoptive T cell therapies is terminal differentiation and exhaustion, which curtail in vivo persistence and long-term antitumor functionality. To overcome these barriers, we conducted genome-wide CRISPR knockout screens to identify novel intrinsic targets that restrain T cell differentiation. We discovered that the specific inhibition of these regulatory nodes blocks terminal differentiation and confers profound resistance to exhaustion.</p><p>Mechanistically, targeting these nodes induces a durable "stem-like" epigenetic imprinting state that reprograms the T cell landscape, resulting in significantly enhanced persistence and sustained effector functionality under chronic antigen exposure and immunosuppressive microenvironmental stress.</p><p>To ensure the clinical safety and translatability of this approach, we have developed a transient strategy to deliver this epigenetic reprogramming. By avoiding permanent genomic editing, this transient modulation mitigates the risks of uncontrolled proliferation or permanent loss of key regulatory checkpoints, while establishing the beneficial epigenetic memory required for durable therapeutic efficacy. This approach provides a safe, next-generation platform for manufacturing persistent, exhaustion-resistant T cell therapies.</p></div>
+<dl class="theme_facts"><div><dt>Team</dt><dd>Albane Simon (lead), Marguerite Laprie-Sentenac, Romane Caudron, Chuang Dong, Aurelien Sutra Del Galy</dd></div><div><dt>Funding</dt><dd>ATIP-Avenir 2022, ANR JCJC, Fondation Gustave Roussy, Ligue contre le Cancer (Val-de-Marne)</dd></div></dl>
+</div>
+
+</section><section
+      class="background"
+      
+      
+      
+    >
+
+<div class="research_axis" id="cell-attack">
+<div class="research_axis_header"><div><span class="eyebrow">Theme 07</span><h2>Cell ATTACK — academic CAR-T production</h2></div><p class="research_question">Academic manufacturing of CAR-T cells at Gustave Roussy.</p></div>
+
+<dl class="theme_facts"><div><dt>Team</dt><dd>Aurelien Sutra Del Galy</dd></div><div><dt>Funding</dt><dd>Fondation Gustave Roussy</dd></div><div><dt>Collaborations</dt><dd>Camille Bigenwald, Cristina Castilla Llorente</dd></div></dl>
+</div>
+
+</section><section
+      class="background"
+      
+      
+      
+    >
+
+<div class="research_axis" id="in-vivo-car-t">
+<div class="research_axis_header"><div><span class="eyebrow">Theme 08</span><h2>In vivo CAR-T for autoimmune diseases</h2></div><p class="research_question">Anti-fibrotic CAR-T cells generated directly in the patient with LNP-delivered mRNA.</p></div>
+<div class="research_axis_copy"><p>Fibrosis is a severe, life-limiting complication in diseases such as Duchenne Muscular Dystrophy (DMD) and Systemic Sclerosis (SSc), for which no specific treatments currently exist. We propose repurposing Chimeric Antigen Receptor (CAR) cell therapy to target fibrosis. Preclinical models demonstrate that FAP-specific CAR-T cells can mitigate pathological extracellular matrix deposition and improve organ function, offering a promising therapeutic avenue in non-tumor environments.</p><p>To overcome the logistical complexity, high costs, and delays associated with conventional ex vivo CAR-T manufacturing, this project aims to develop an innovative in vivo reprogramming strategy. By using optimized lipid nanoparticle (LNP) technology to deliver CAR-encoding modified RNA directly to the host, we intend to generate transient, anti-fibrotic CAR-T cells directly within the patient, paving the way for a scalable, off-the-shelf solution for fibrotic diseases.</p></div>
+<dl class="theme_facts"><div><dt>Funding</dt><dd>VivoCARFIB (ANR AAPG 2025)</dd></div><div><dt>Collaborations</dt><dd>Philippe Menasché (HEGP), Jérôme Avouac (Cochin)</dd></div></dl>
 </div>
 
 </section><section
