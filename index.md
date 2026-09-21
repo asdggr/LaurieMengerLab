@@ -1,6 +1,6 @@
 ---
-title: Home
-description: We study and engineer T cells to advance cancer immunotherapy. Discover the Menger Lab at Gustave Roussy, our research and our team.
+description: "The Menger Lab (Laurie Menger, Gustave Roussy, INSERM U1356) studies and engineers T cells to advance CAR-T and cancer immunotherapy."
+title: Advanced T-cell Therapy at Gustave Roussy
 ---
 
 <div class="hero hero_immersive">

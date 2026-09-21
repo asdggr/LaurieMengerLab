@@ -1,4 +1,5 @@
 ---
+description: "Meet the Menger Lab team at Gustave Roussy: immunologists, engineers and bioinformaticians working on T-cell and CAR-T therapies, led by Laurie Menger."
 title: Team
 nav:
   order: 4

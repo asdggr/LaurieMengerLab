@@ -1,4 +1,5 @@
 ---
+description: "Join the Menger Lab at Gustave Roussy: postdoctoral positions in T-cell immunology, cancer and bioengineering."
 title: Opportunities
 nav:
   order: 5
