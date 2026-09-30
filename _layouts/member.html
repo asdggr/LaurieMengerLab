@@ -22,13 +22,17 @@ layout: default
     {% unless aliases %}{% assign aliases = page.name | split: '||' %}{% endunless %}
     {% assign related_count = 0 %}
     {% capture related_papers %}
-    {% assign papers = site.data.citations | sort: 'date' | reverse %}
+    {% assign papers = site.data.citations %}
+    {% if page.publications %}{% assign papers = papers | concat: page.publications %}{% endif %}
+    {% assign papers = papers | sort: 'date' | reverse %}
+    {% assign max_papers = page.publications.size | plus: 3 %}
     {% for paper in papers %}
       {% assign matched = false %}
+      {% if page.publications contains paper %}{% assign matched = true %}{% endif %}
       {% for alias in aliases %}{% if paper.authors contains alias %}{% assign matched = true %}{% endif %}{% endfor %}
       {% if matched %}
         {% assign related_count = related_count | plus: 1 %}
-        {% if related_count <= 3 %}<li><span>{{ paper.publisher }} · {{ paper.date | date: '%Y' }}</span><a href="{{ paper.link }}">{{ paper.title }}</a></li>{% endif %}
+        {% if related_count <= max_papers %}<li><span>{{ paper.publisher }} · {{ paper.date | date: '%Y' }}</span><a href="{{ paper.link }}">{{ paper.title }}</a></li>{% endif %}
       {% endif %}
     {% endfor %}
     {% endcapture %}
